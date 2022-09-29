@@ -1,0 +1,122 @@
+@import 'variables';
+
+@mixin block {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainBGC;
+  margin-top: -63px;
+}
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+@mixin form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  .inputField {
+    margin-bottom: 20px;
+  }
+}
+
+@mixin formButtonBlock {
+  height: 50px;
+  font-size: 18px;
+}
+
+@mixin primaryLink {
+  margin: 10px 0 0;
+  font-weight: bold;
+  color: $primary;
+  text-decoration: none;
+  transition: all .4s ease;
+  font-size: 14px;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all .4s ease;
+  }
+}
+
+@mixin logo {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  .title {
+    span {
+      margin-left: 10px;
+      letter-spacing: .4em;
+      font-style: italic;
+    }
+  }
+  h1 {
+    margin: 0;
+    line-height: .8;
+    font-size: 60px;
+    font-family: 'Yellowtail', cursive;
+    color: $primary;
+  }
+}
+
+@mixin forImage {
+
+  position: relative;
+
+  .withImage {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: dashed 1px rgba(0, 0, 0, 0.5);
+    padding: 0 0.4em;
+    cursor: help;
+    font-style: normal;
+    position: relative;
+
+    &:hover + div {
+      top: 24px;
+      opacity: 1;
+    }
+
+    &:hover + div::before {
+      opacity: 1;
+    }
+  }
+
+  div {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 20px;
+    width: 200px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    pointer-events: none; /* This prevents the box from appearing when hovered. */
+    transition: opacity .2s, top .2s;
+    border-radius: 5px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      border: solid transparent 5px;
+      border-bottom-color: rgba(0, 0, 0, 0.8);
+      transition: opacity .3s, top .3s;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,11 +1,11 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 
-export const rootReducer = combineReducers({
-  // notes: notesReducer,
-});
+import productsReducer from 'store/productsSlice';
 
 export const store = configureStore({
-  reducer: rootReducer,
+  reducer: {
+    products: productsReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;

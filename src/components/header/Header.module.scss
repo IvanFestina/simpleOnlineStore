@@ -1,0 +1,42 @@
+@import 'src/common/styles/variables';
+@import 'src/common/styles/mixins';
+
+.headerWrapper {
+  display: grid;
+  grid-template-columns: 180px 180px;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  z-index: 11;
+  height: 64px;
+
+  .tab {
+    display: flex;
+    height: 100%;
+    border-left: 1px solid $borderColor;
+
+    a {
+      text-decoration: none;
+      color: $secondTextColor;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      transition: all .3s ease;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        color: $primary;
+        transition: all .3s ease;
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.05);;
+        color: $primary;
+        transition: all .3s ease;
+      }
+    }
+  }
+}

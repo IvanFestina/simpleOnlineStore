@@ -1,0 +1,41 @@
+@import 'src/common/styles/variables';
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #212121;
+}
+.content {
+    padding-top: 63px;
+
+    background-color: $mainBGC;
+}
+.appBlock {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cardsRow {
+    display: flex;
+    align-items: center;
+    min-height: 38px;
+}
+
+.question {
+    width: 200px;
+}
+
+.answer {
+    width: 200px;
+}
+
+.updated {
+    width: 120px;
+}
+.actions{
+    display: flex;
+    justify-content: end;
+    width: 180px;
+}
+
+
