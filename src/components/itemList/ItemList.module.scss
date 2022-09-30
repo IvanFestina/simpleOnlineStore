@@ -1,0 +1,49 @@
+@import 'src/common/styles/variables';
+@import 'src/common/styles/mixins';
+
+.itemListWrapper {
+  background-color: $mainBGC;
+  min-height: calc(100vh - 64px);
+  padding: 10px 20px;
+
+  .itemListContainer {
+
+
+
+    .button {
+      display: flex;
+      justify-content: center;
+      padding: 5px 15px;
+      margin-top: 15px;
+
+      .primaryButton {
+        background-color: $primary;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+
+        &:hover {
+          background-color: #128EF2;
+        }
+      }
+    }
+
+    .itemListBlock {
+      margin-top: 15px;
+      gap: 25px;
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      padding: 0 30px 30px;
+      height: 100vh;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .itemListBlock {
+    justify-content: center;
+  }
+}

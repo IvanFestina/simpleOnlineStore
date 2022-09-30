@@ -11,7 +11,7 @@ const initialState: ProductState = {
     {
       id: uuidv4(),
       title: 'Cheap car',
-      cost: '2000 USD',
+      price: '2000 USD',
       description: "this is the best cheap car we've got",
       photo: 'https://s3-us-west-2.amazonaws.com/usedphotosuk/108342480_614.jpg',
       inCart: false,
@@ -19,7 +19,7 @@ const initialState: ProductState = {
     {
       id: uuidv4(),
       title: 'Expensive car',
-      cost: '30000 USD',
+      price: '30000 USD',
       description: "this is the best and expensive car we've got",
       photo:
         'https://daxstreet.com/wp-content/uploads/2022/03/0d2m0qkg_car_625x300_12_January_22.jpg',
@@ -50,6 +50,6 @@ type ItemTypes = {
   title?: string;
   photo?: string;
   description?: string;
-  cost?: string;
-  inCart?: boolean;
+  price?: string;
+  inCart: boolean;
 };

@@ -3,8 +3,8 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { Error404Page } from '../error/Error404Page';
-import { ItemList } from '../ItemList/ItemList';
-import { ShoppingCart } from '../ShoppingCart/ShoppingCart';
+import { ItemList } from '../itemList/ItemList';
+import { ShoppingCart } from '../shoppingCart/ShoppingCart';
 
 export const PATH = {
   ITEM_LIST: '/',

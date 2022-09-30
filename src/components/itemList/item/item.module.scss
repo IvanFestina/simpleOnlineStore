@@ -1,0 +1,80 @@
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 25px 0;
+  min-width: 200px;
+  max-width: 380px;
+  width: 100%;
+  min-height: 250px;
+  background: #edefed;
+  transition: transform .3s ease;
+
+
+  &:hover {
+    outline: 1px solid;
+    transform: scale(1.01);
+    transition: transform .3s ease;
+  }
+
+  .title {
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: larger;
+
+  }
+
+  .photo {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .price {
+    margin-top: 20px;
+    font-size: larger;
+  }
+
+  .description {
+    margin-top: 15px;
+    flex-grow: 1;
+    word-break: break-word;
+  }
+
+  .itemAction {
+    display: flex;
+    margin-top: 15px;
+    position: relative;
+    justify-content: space-evenly;
+    align-self: stretch;
+    cursor: pointer;
+    transition: all 2s ease;
+
+
+    .deleteIcon {
+      transition: transform .3s ease;
+
+      &:hover {
+        fill: rgba(220, 53, 53, 0.82);
+        transform: scale(1.2);
+        transition: transform .3s ease;
+
+
+      }
+    }
+
+    .checkIcon {
+      transition: transform .3s ease;
+
+      &:hover {
+        fill: rgba(119, 234, 145, 0.97);
+        transform: scale(1.2);
+        transition: transform .3s ease;
+
+      }
+    }
+
+  }
+
+}
