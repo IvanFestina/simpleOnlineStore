@@ -3,8 +3,8 @@
 
 .itemListWrapper {
   background-color: $mainBGC;
-  min-height: calc(100vh - 64px);
   padding: 10px 20px;
+
 
   .itemListContainer {
 
@@ -29,20 +29,21 @@
     }
 
     .itemListBlock {
+
       margin-top: 15px;
       gap: 25px;
       display: flex;
       align-content: flex-start;
       flex-wrap: wrap;
       padding: 0 30px 30px;
-      height: 100vh;
+      height: 100%;
 
     }
   }
 
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 970px) {
   .itemListBlock {
     justify-content: center;
   }

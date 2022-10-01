@@ -1,0 +1,24 @@
+@import 'src/common/styles/variables';
+
+.modalBlock {
+
+  h4 {
+    color: $primary;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
+
+  button {
+    font-size: 13px;
+  }
+
+
+}
