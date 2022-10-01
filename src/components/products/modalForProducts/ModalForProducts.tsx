@@ -6,8 +6,9 @@ import { Button } from '../../../common/Button/Button';
 import { ButtonSecondary } from '../../../common/ButtonSecondary/ButtonSecondary';
 import { InputText } from '../../../common/InputText/InputText';
 import Modal from '../../../common/Modal/Modal';
+import { MESSAGES_FOR_SUCCESS_BAR } from '../../../common/SnackBar/SnackBar';
 import { Textarea } from '../../../common/Textarea/Textarea';
-import { createItem } from '../../../store/productsSlice';
+import { createItem, setAppMessage } from '../../../store/productsSlice';
 import { useAppDispatch } from '../../../utils/hooks';
 
 import s from './ModalForProducts.module.scss';
@@ -45,6 +46,9 @@ export const ModalForProducts: React.FC<ModalForPacksPropsType> = ({
 
   const createPackHandler = () => {
     dispatch(createItem({ title: itemTitle, price, description, image: file64 }));
+    dispatch(
+      setAppMessage({ appMessage: MESSAGES_FOR_SUCCESS_BAR.NEW_ITEM_SUCCESSFULLY_ADDED }),
+    );
     setItemTitle('');
     setPrice('');
     setDescription('');
@@ -75,7 +79,7 @@ export const ModalForProducts: React.FC<ModalForPacksPropsType> = ({
           onChangeText={setDescription}
         />
         <div className={s.optionsBlock}>
-          <input ref={inRef} type="file" onChange={onChangePackImage} />
+          <input ref={inRef} accept="image/*" type="file" onChange={onChangePackImage} />
           <ButtonSecondary
             className={s.downloadButton}
             onClick={() => inRef.current && inRef.current.click()}

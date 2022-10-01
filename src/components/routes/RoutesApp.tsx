@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 import { Error404Page } from '../error/Error404Page';
-import { Products } from '../itemList/Products';
+import { Products } from '../products/Products';
 import { ShoppingCart } from '../shoppingCart/ShoppingCart';
 
 export const PATH = {

@@ -47,7 +47,7 @@ export const Products = () => {
           </div>
         </div>
       </div>
-      <ModalForProducts modalActive={modalActive} setModalActive={setModalActive} />;
+      <ModalForProducts modalActive={modalActive} setModalActive={setModalActive} />
     </>
   );
 };

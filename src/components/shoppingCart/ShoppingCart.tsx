@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { ButtonSecondary } from '../../common/ButtonSecondary/ButtonSecondary';
 import paperStyle from '../../common/styles/classes.module.scss';
 import { useAppSelector } from '../../utils/hooks';
-import { Item } from '../itemList/item/Item';
-import s from '../itemList/Products.module.scss';
+import { Item } from '../products/item/Item';
+import s from '../products/Products.module.scss';
 
 import { ModalForCart } from './modalForCart/ModalForCart';
 import style from './ShoppingCart.module.scss';

@@ -2,7 +2,8 @@ import React from 'react';
 
 import { Button } from '../../../common/Button/Button';
 import Modal from '../../../common/Modal/Modal';
-import { buyProducts } from '../../../store/productsSlice';
+import { MESSAGES_FOR_SUCCESS_BAR } from '../../../common/SnackBar/SnackBar';
+import { buyProducts, setAppMessage } from '../../../store/productsSlice';
 import { useAppDispatch } from '../../../utils/hooks';
 
 import s from './ModalForCart.module.scss';
@@ -22,6 +23,7 @@ export const ModalForCart: React.FC<ModalForPacksPropsType> = ({
 
   const onClickButtonHandler = () => {
     dispatch(buyProducts());
+    dispatch(setAppMessage({ appMessage: MESSAGES_FOR_SUCCESS_BAR.PAYMENT_SUCCESSFUL }));
     setModalActive(false);
   };
 

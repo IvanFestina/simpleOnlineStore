@@ -1,7 +1,12 @@
 import AddToCart from '../../../assets/AddToCart';
 import Check from '../../../assets/Check';
 import DeleteIcon from '../../../assets/DeleteIcon';
-import { deleteProduct, toggleInCartState } from '../../../store/productsSlice';
+import { MESSAGES_FOR_SUCCESS_BAR } from '../../../common/SnackBar/SnackBar';
+import {
+  deleteProduct,
+  setAppMessage,
+  toggleInCartState,
+} from '../../../store/productsSlice';
 import { useAppDispatch } from '../../../utils/hooks';
 
 import s from './item.module.scss';
@@ -23,6 +28,9 @@ export const Item = ({ id, title, image, description, price, inCart }: ItemProps
   };
   const onDeleteButtonClickHandler = () => {
     dispatch(deleteProduct({ id }));
+    dispatch(
+      setAppMessage({ appMessage: MESSAGES_FOR_SUCCESS_BAR.ITEM_SUCCESSFULLY_REMOVED }),
+    );
   };
 
   return (

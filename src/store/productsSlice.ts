@@ -66,11 +66,19 @@ export const productsSlice = createSlice({
     buyProducts(state) {
       state.products.map(p => (p.inCart = false));
     },
+    setAppMessage(state, action: PayloadAction<{ appMessage: string }>) {
+      state.appMessage = action.payload.appMessage;
+    },
   },
 });
 
-export const { deleteProduct, toggleInCartState, createItem, buyProducts } =
-  productsSlice.actions;
+export const {
+  deleteProduct,
+  toggleInCartState,
+  createItem,
+  buyProducts,
+  setAppMessage,
+} = productsSlice.actions;
 
 export default productsSlice.reducer;
 //
