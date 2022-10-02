@@ -16,13 +16,13 @@
       margin-top: 15px;
 
       .primaryButton {
-        background-color: $primary;
+        background-color: $primaryNoble;
         color: #ffffff;
         padding: 10px 20px;
         font-size: 16px;
 
         &:hover {
-          background-color: #128EF2;
+          background-color: $primaryNobleLighter;
         }
       }
     }

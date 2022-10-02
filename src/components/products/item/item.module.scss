@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid;
   padding: 25px 0;
   min-width: 200px;
   max-width: 380px;
@@ -12,10 +11,11 @@
   min-height: 250px;
   background: $mainBGC;
   transition: transform .3s ease;
+  border-radius: 2%;
 
 
   &:hover {
-    outline: 1px solid;
+    outline: 1px solid rgba(141, 141, 149, 0.97);
     transform: scale(1.01);
     transition: transform .3s ease;
   }

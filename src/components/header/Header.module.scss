@@ -28,13 +28,13 @@
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.05);
-        color: $primary;
+        color: $primaryNobleLighter;
         transition: all .3s ease;
       }
 
       &.active {
         background-color: rgba(0, 0, 0, 0.05);;
-        color: $primary;
+        color: $primaryNoble;
         transition: all .3s ease;
       }
 
