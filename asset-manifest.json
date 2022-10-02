@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/simpleOnlineStore/static/css/main.84a4becb.chunk.css",
-    "main.js": "/simpleOnlineStore/static/js/main.8ff9384d.chunk.js",
-    "main.js.map": "/simpleOnlineStore/static/js/main.8ff9384d.chunk.js.map",
+    "main.css": "/simpleOnlineStore/static/css/main.95e2f6bb.chunk.css",
+    "main.js": "/simpleOnlineStore/static/js/main.2400b072.chunk.js",
+    "main.js.map": "/simpleOnlineStore/static/js/main.2400b072.chunk.js.map",
     "runtime-main.js": "/simpleOnlineStore/static/js/runtime-main.6ac9abd5.js",
     "runtime-main.js.map": "/simpleOnlineStore/static/js/runtime-main.6ac9abd5.js.map",
     "static/js/2.0d55312a.chunk.js": "/simpleOnlineStore/static/js/2.0d55312a.chunk.js",
     "static/js/2.0d55312a.chunk.js.map": "/simpleOnlineStore/static/js/2.0d55312a.chunk.js.map",
     "index.html": "/simpleOnlineStore/index.html",
-    "static/css/main.84a4becb.chunk.css.map": "/simpleOnlineStore/static/css/main.84a4becb.chunk.css.map",
+    "static/css/main.95e2f6bb.chunk.css.map": "/simpleOnlineStore/static/css/main.95e2f6bb.chunk.css.map",
     "static/js/2.0d55312a.chunk.js.LICENSE.txt": "/simpleOnlineStore/static/js/2.0d55312a.chunk.js.LICENSE.txt",
     "static/media/cat.959920fc.png": "/simpleOnlineStore/static/media/cat.959920fc.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6ac9abd5.js",
     "static/js/2.0d55312a.chunk.js",
-    "static/css/main.84a4becb.chunk.css",
-    "static/js/main.8ff9384d.chunk.js"
+    "static/css/main.95e2f6bb.chunk.css",
+    "static/js/main.2400b072.chunk.js"
   ]
 }
